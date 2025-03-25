@@ -4,7 +4,7 @@ services:
       context: .
     command: bash start-dev.sh
     environment:
-      DB_URL: jdbc:postgresql://db:5432/barber-shop-api
+      DB_URL: jdbc:postgresql://db:5432/barber-shop-api   
       DB_USER: barber-shop-api
       DB_PASSWORD: barber-shop-api
       SPRING_PROFILES_ACTIVE: dev
