@@ -37,14 +37,15 @@ dependencies {
 	implementation("org.mapstruct:mapstruct:$mapStructVersion")
 
 	compileOnly("org.projectlombok:lombok")
+	annotationProcessor("org.projectlombok:lombok")
 
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 
 	runtimeOnly("org.postgresql:postgresql")
 
-	annotationProcessor("org.mapstruct:mapstruct-processor:$mapStructVersion")
 	annotationProcessor("org.projectlombok:lombok-mapstruct-binding:0.2.0")
-	annotationProcessor("org.projectlombok:lombok")
+	annotationProcessor("org.mapstruct:mapstruct-processor:$mapStructVersion")
+
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
